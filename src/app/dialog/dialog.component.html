@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Add Todo Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="todoForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Todo</mat-label>
+            <input formControlName="todoLabel" maxlength="50" matInput placeholder="Todo">
+            <mat-icon matSuffix>work_outline</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Priority</mat-label>
+            <input formControlName="priority" type="number" min="1" max="10" matInput placeholder="Priority">
+            <mat-icon matSuffix>priority_high</mat-icon>
+        </mat-form-field>
+        <mat-radio-group formControlName="done" aria-label="Select an option">
+            <mat-radio-button *ngFor="let done of doneList" [value]="done">
+                {{done}}
+            </mat-radio-button>
+        </mat-radio-group>
+    </form>   
+</div>
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addTodo()">{{actionBtn}}</button>
+</div>

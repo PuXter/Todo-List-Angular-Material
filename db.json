@@ -1,0 +1,32 @@
+{
+  "todoList": [
+    {
+      "todoLabel": "xD",
+      "priority": 1,
+      "done": "Not Done",
+      "id": 1
+    },
+    {
+      "todoLabel": "no tak",
+      "priority": 4,
+      "done": "Not Done",
+      "id": 5
+    },
+    {
+      "todoLabel": "isc sobie",
+      "priority": 10,
+      "done": "Not Done",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
